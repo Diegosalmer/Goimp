@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOIMP &#183; Visibles y Cercanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page">
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <h1 class="animate delay-2">Sabemos que el impacto real de tus egresados lo cambia todo.</h1>
+                    <h2 class="animate delay-3">Somos la plataforma que los hace visibles y cercanos.</h2>
+                    <h3 class="tagline animate delay-4">Disponible pronto.</h3>
+                    <button class="cta animate delay-5" type="button" data-modal-open>&#9993; Solicita una demo aqu&#237;</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>#visiblesycercanos &middot; GOIMP</footer>
+
+    <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="demoTitle">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content">
+            <button class="modal-close" type="button" aria-label="Cerrar" data-modal-close>&times;</button>
+            <h2 id="demoTitle">Solicita tu demo</h2>
+            <form id="demoForm">
+                <div>
+                    <label for="fullName">Nombre completo</label>
+                    <input id="fullName" name="fullName" type="text" placeholder="Introduce tu nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo electr&#243;nico</label>
+                    <input id="email" name="email" type="email" placeholder="nombre@empresa.com" required>
+                </div>
+                <div>
+                    <label for="role">Cargo (Ej: Jefe de Egresados)</label>
+                    <input id="role" name="role" type="text" placeholder="Introduce tu cargo" required>
+                </div>
+                <div>
+                    <label for="phone">Tel&#233;fono (opcional)</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Ej: +57 300 000 0000">
+                </div>
+                <button class="submit-btn" type="submit">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
