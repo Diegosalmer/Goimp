@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --blue-primary: #0052cc;
     --blue-deep: #003a99;
     --text-color: #ffffff;
@@ -65,10 +65,27 @@ main {
     gap: clamp(1.5rem, 5vw, 2.5rem);
 }
 
-.hero-copy {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(1.2rem, 4vw, 2.4rem);
+.form-feedback {
+    min-height: 1.5rem;
+    margin-top: 1.1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.04rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.form-feedback.is-visible {
+    opacity: 1;
+}
+
+.form-feedback.is-success {
+    color: #b9f6ca;
+}
+
+.form-feedback.is-error {
+    color: #ffb3b3;
 }
 
 h1 {
@@ -308,3 +325,5 @@ footer {
         padding: 1.9rem;
     }
 }
+
+
